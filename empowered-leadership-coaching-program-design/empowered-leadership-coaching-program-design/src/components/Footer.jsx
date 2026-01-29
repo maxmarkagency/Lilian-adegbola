@@ -5,6 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import PrivacyPolicyModal from './PrivacyPolicyModal';
 import TermsOfServiceModal from './TermsOfServiceModal';
+import logoIcon from '../assets/logo.png';
 
 const { FiMail, FiPhone, FiLinkedin, FiInstagram, FiFacebook, FiArrowUp, FiSettings } = FiIcons;
 
@@ -104,9 +105,7 @@ const Footer = () => {
                 >
                   {/* Logo */}
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-gold-gradient rounded-full flex items-center justify-center">
-                      <span className="text-navy-900 font-bold text-xl">LA</span>
-                    </div>
+                    <img src={logoIcon} alt="Lilian Adegbola" className="w-12 h-12 rounded-full object-cover" />
                     <div>
                       <h3 className="font-dancing text-2xl text-white font-bold">
                         Lillian Adegbola

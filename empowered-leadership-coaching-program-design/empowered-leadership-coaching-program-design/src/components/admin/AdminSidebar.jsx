@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../../common/SafeIcon';
+import logoIcon from '../../assets/logo.png';
 
 const { FiHome, FiCalendar, FiMail, FiEdit3, FiStar, FiFileText, FiUsers, FiSettings, FiImage, FiType, FiSearch, FiShoppingBag, FiMessageCircle, FiBookOpen } = FiIcons;
 
@@ -25,9 +26,7 @@ const AdminSidebar = ({ activeTab, setActiveTab }) => {
       {/* Logo */}
       <div className="p-6 border-b border-navy-700">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gold-gradient rounded-full flex items-center justify-center">
-            <span className="text-navy-900 font-bold text-lg">LA</span>
-          </div>
+          <img src={logoIcon} alt="Lilian Adegbola" className="w-10 h-10 rounded-full object-cover" />
           <div>
             <h2 className="font-dancing text-xl font-bold">Admin Panel</h2>
             <p className="text-gray-400 text-sm font-montserrat">Management</p>
