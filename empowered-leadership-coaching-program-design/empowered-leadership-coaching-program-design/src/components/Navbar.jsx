@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import BookingModal from './BookingModal';
+import logoIcon from '../assets/logo.png';
 
 const { FiMenu, FiX, FiChevronDown, FiMic, FiUsers, FiTarget, FiBriefcase, FiTrendingUp, FiSettings, FiBookOpen, FiHeart, FiMessageCircle, FiShield, FiCompass, FiMapPin, FiStar } = FiIcons;
 
@@ -218,9 +219,7 @@ const Navbar = () => {
               className="flex items-center space-x-2 cursor-pointer"
               onClick={handleHomeClick}
             >
-              <div className="w-12 h-12 bg-gold-gradient rounded-full flex items-center justify-center">
-                <span className="text-navy-900 font-bold text-xl">LA</span>
-              </div>
+              <img src={logoIcon} alt="Lilian Adegbola Logo" className="w-12 h-12 rounded-full object-cover" />
               <div className="hidden sm:block">
                 <h1 className={`font-dancing text-2xl font-bold transition-colors duration-300 ${scrolled ? 'text-navy-800' : 'text-white'
                   }`}>
