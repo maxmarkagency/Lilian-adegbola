@@ -1,0 +1,2 @@
+-- Data insertion skipped to allow schema push
+-- Original content preserved in backups or seed.sql if needed
